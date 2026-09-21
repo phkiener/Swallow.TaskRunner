@@ -16,10 +16,11 @@
     <File Path="src/Directory.Build.props" />
     <File Path="src/Directory.Build.targets" />
     <File Path="src/Directory.Packages.props" />
-    <Project Path="src/Swallow.TaskRunner/Swallow.TaskRunner.csproj" />
   </Folder>
   <Folder Name="/Additional Items/Workflows/">
     <File Path=".github/workflows/build.yaml" />
     <File Path=".github/workflows/publish.yaml" />
   </Folder>
+  <Project Path="src/Swallow.TaskRunner/Swallow.TaskRunner.csproj" />
+  <Project Path="test/Swallow.TaskRunner.Tests/Swallow.TaskRunner.Tests.csproj" />
 </Solution>

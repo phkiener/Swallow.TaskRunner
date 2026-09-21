@@ -9,7 +9,6 @@ on:
 
 env:
   RESTORE_WORKLOAD: false
-  RUN_TESTS: false
 
 jobs:
   build-and-test:
@@ -35,5 +34,4 @@ jobs:
         run: dotnet build --configuration Debug --no-restore
 
       - name: Run tests
-        if: ${{ env.RESTORE_WORKLOAD == 'true' }}
         run: dotnet test --configuration Debug --no-restore --no-build
